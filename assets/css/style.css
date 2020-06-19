@@ -1,4 +1,93 @@
 body {
-    background-color: #0c0c0c;
-    color: #efefef;
+    /* background: linear-gradient(118.85deg, #111111 54.28%, #FF6BA9 54.29%);
+    color: #0c0c0c; */
+
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    font-size: 16px;
 }
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100vh;
+}
+
+#btnCep{
+    background-color: rgb(255, 46, 133);
+    border-color: rgb(255, 46, 133);
+}
+#btnCep:hover{
+    background-color: rgb(255, 96, 162);
+    border-color: rgb(255, 46, 133);
+}
+#btnCep:focus{
+    background-color: rgb(255, 96, 162);
+    border-color: rgb(255, 46, 133);
+    box-shadow: 0 0 0 0.2rem rgba(255, 96, 162, .5);
+}
+
+#titulo{
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 0.45em;
+    text-transform: uppercase;
+}
+
+.container {
+    background-color: none;
+}
+
+.prendedor{
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    top: 0px;
+    margin-top: 5px;
+    z-index: 3;
+
+    background-color: none;
+
+    height: 80px;
+    width: 175px;
+}
+.prendedor img {
+    height: 80px;
+}
+
+.folha{
+    width: 100%;
+    height: 100%;
+
+    padding-top: 45px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    border-radius: 15px;
+
+    background-color: rgb(253, 251, 255);
+}
+.prancheta{
+    width: 80%;
+    max-width: 477px;
+    min-width: 370px;
+    height: 95%;
+    padding: 20px;
+    border-radius: 15px;
+    border: 7px solid #826143;
+
+    background: linear-gradient(180deg, #CFA571 10.42%, #B78D5F 31.25%, #956C46 62.5%);
+
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* @media(max-width:577px){
+    .container{
+        max-height: 600px;
+    }
+} */
